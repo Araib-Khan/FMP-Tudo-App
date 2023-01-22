@@ -11,27 +11,38 @@
         <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-dark ">
-    <h1 class="text-center text-white">TODO APP</h1>
-    <div class="d-flex justify-content-center ">
-        <input type="text" class="w-25 rounded " id="text">
+<body >
+<div class="main">
+      
+    <div class="py-5 main1">
+        <h1 class="text-center">TODO APP FOR FYP</h1>
+    </div>
+
+    <div class="main2 border container-fluid w-50 py-5 my-2">
+
+    
+    <div class="d-flex justify-content-center mt-5 mb-5">
+        <input type="text" class="w-100 rounded " id="inputtask">
 
     </div> <br>
-    <div class="d-flex justify-content-center ">
-        <button onclick="addElem()" type="button" class="btn btn-success">Add</button>
-        <button onclick="deleteAll()" type="button" class="btn btn-danger">Delete All</button>
+    <div class="d-flex justify-content-center mb-5 ">
+        <button onclick="addtodoitem()" type="button" class="btn btn-success">Add</button>
+        <button onclick="deleteitems()" type="button" class="btn btn-danger">Delete All</button>
         
     </div>
-    <div class="container bg-secondary">
-        <ul id="mainList" class="text-white">
+    <div class="container bg-white mt-5 mb-5">
+        <ul id="mainList" class="text-dark">
         </ul>
     </div>
+</div>
 
+
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script  type="module" src="app.js"></script>
 </body>
 
 </html>
